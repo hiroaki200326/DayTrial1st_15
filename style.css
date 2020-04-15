@@ -1032,12 +1032,15 @@ body.stretched #header.full-header .container {
 
 
 #logo {
-	position: relative;
+	position: absolute;
 	float: left;
 	font-family: 'Raleway', sans-serif;
 	font-size: 36px;
 	line-height: 100%;
+	margin: auto 0;
 	margin-right: 40px;
+	top: 50%;
+	transform: translate(0%, -50%);
 }
 
 #header.full-header #logo {
@@ -1050,7 +1053,9 @@ body.stretched #header.full-header .container {
 
 #logo a {
 	display: block;
-	color: #000;
+	color: #444;
+	font-weight: bold;
+	text-shadow: white 1px 0 10px;
 }
 
 #logo img {
@@ -1167,6 +1172,8 @@ body.stretched #header.full-header .container {
 	-webkit-transition: margin .4s ease, padding .4s ease;
 	-o-transition: margin .4s ease, padding .4s ease;
 	transition: margin .4s ease, padding .4s ease;
+	text-shadow: white 1px 0 10px;
+
 }
 
 #primary-menu ul li > a span { display: none; }
@@ -13934,4 +13941,13 @@ body:not(.no-transition) #wrapper,
 	text-shadow: none !important;
 }
 
+.myname{
+	font-size: 16px;
+}
+.myname::first-line{
+	font-size: 24px;
+}
 
+.fa-html5:before {
+	content: "\f13b";
+}
